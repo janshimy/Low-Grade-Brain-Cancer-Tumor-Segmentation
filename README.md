@@ -1,4 +1,4 @@
-# Low-Grade-Glioma-Segmentation
+# Low-Grade-Glioma-Brain-Tumor-Segmentation
 
 ## Table of Contents
 
