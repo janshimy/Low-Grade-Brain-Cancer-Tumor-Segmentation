@@ -1,4 +1,4 @@
-# Low-Grade-Glioma-Brain-Tumor-Segmentation
+# Low-Grade-Glioma-Segmentation
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@
 
 This is a capstone project on a real dataset related to segmenting low-grade glioma. This capstone project is included in the *UpSchool Machine Learning & Deep Learning Program in partnership with Google Developers*.
 
-[Jupyter Notebook](https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/low-grade-glioma-segmentation.ipynb)
+[Jupyter Notebook](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/low-grade-glioma-segmentation.ipynb)
 
 ### A.1 What is the low-grade glioma?
 
@@ -54,7 +54,7 @@ The Brain Magnetic Resonance Imaging (MRI) segmentation dataset is obtained from
 
 | Low Grade Glioma Without Segmentation                                                                                                                                                                                             | Low Grade Glioma With Segmentation                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Glioma - Low Grade - Case 1 Without Segmentation](https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/low-grade-glioma-grade-1-without-segmentation.png?raw=true)  <br/>*This image belongs to a 24-year-old man who developed focal seizures affecting the left side of his body.* | ![Glioma - Low Grade - Case 1 With Segmentation](https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/low-grade-glioma-grade-1-with-segmentation.png?raw=true) <br/>*This image belongs to a 24-year-old man who developed focal seizures affecting the left side of his body.<br/>The red area indicates low grade glioma.* |
+| ![Glioma - Low Grade - Case 1 Without Segmentation](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/low-grade-glioma-grade-1-without-segmentation.png?raw=true)  <br/>*This image belongs to a 24-year-old man who developed focal seizures affecting the left side of his body.* | ![Glioma - Low Grade - Case 1 With Segmentation](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/low-grade-glioma-grade-1-with-segmentation.png?raw=true) <br/>*This image belongs to a 24-year-old man who developed focal seizures affecting the left side of his body.<br/>The red area indicates low grade glioma.* |
 
 ## C. Data Preparation
 
@@ -62,20 +62,20 @@ This dataset is a table of 110 rows and 18 columns. Each row represents a patien
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Information%20about%20csv%20dataset.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/Information%20about%20csv%20dataset.png?raw=true">
   <br>
   <em>Figure 3- Information about csv dataset</em>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/the%20head%20of%20the%20csv%20dataset.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/the%20head%20of%20the%20csv%20dataset.png?raw=true">
   <br>
   <em>Figure 4 - The head of the csv dataset</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/the%20final%20dataframe%20to%20be%20used%20in%20the%20visualization%20and%20modeling%20part.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/the%20final%20dataframe%20to%20be%20used%20in%20the%20visualization%20and%20modeling%20part.png?raw=true">
   <br>
   <em>Figure 5 - The final dataframe to be used in the visualization and modeling part</em>
 </p>
@@ -87,7 +87,7 @@ The visualization part takes place in two stages. The first state involves displ
 ### D.1 Distribution
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20diagnosis.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20diagnosis.png?raw=true">
   <br>
   <em>Figure 6 - Distribution of data grouped by diagnosis</em>
 </p>
@@ -95,7 +95,7 @@ The visualization part takes place in two stages. The first state involves displ
 This data shows the distribution of images grouped by diagnosis. The data is split into two groups, “positive” and “negative”. The “positive” group contains 2256 images, which represents 65.05% of the total images. The “negative” group contains 1373 images, which represents 34.95% of the total images. In total, there are 3929 images in the dataset. 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20patient%20and%20diagnosis.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20patient%20and%20diagnosis.png?raw=true">
   <br>
   <em>Figure 7 - Distribution of data grouped by patient and diagnosis</em>
 </p>
@@ -111,7 +111,7 @@ Additionally, the hot colormap is also useful in differentiating between healthy
 It is important to note that the choice of colormap is not only important for visualizing the data but also for the analysis of the data, for example in brain tumor segmentation tasks, the choice of colormap will be important to define the threshold values for the segmentation algorithm.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Low%20Grade%20Glioma%20Detection%20on%20Brain%20MRI%20Images%20with%20original%20color%20and%20hot%20colormap.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/Low%20Grade%20Glioma%20Detection%20on%20Brain%20MRI%20Images%20with%20original%20color%20and%20hot%20colormap.png?raw=true">
   <br>
   <em>Figure 8 - Low Grade Glioma Detection on Brain MRI Images wit original color and hot colormap</em>
 </p>
@@ -119,7 +119,7 @@ It is important to note that the choice of colormap is not only important for vi
 This diagram shows the representation of different images, positive and negative, under two different color scales. (Original color and hot colormap) Positive images using a hot colormap show where the tumor is more black or more white.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Tumor%20location%20is%20show%20as%20segmented%20on%20one%20Brain%20MRI.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/Tumor%20location%20is%20show%20as%20segmented%20on%20one%20Brain%20MRI.png?raw=true">
   <br>
   <em>Figure 9 - Tumor location as segmented on a Brain MRI image</em>
 </p>
@@ -140,13 +140,13 @@ Optical Distortion is a technique that simulates the effects of a camera lens by
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/data_augmentation_mri_images.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/data_augmentation_mri_images.png?raw=true">
   <br>
   <em>Figure 10 - Augmented Brain MRI Images</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/data_augmentation_mask_images.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/data_augmentation_mask_images.png?raw=true">
   <br>
   <em>Figure 11 - Augmented Mask Images</em>
 </p>
@@ -185,7 +185,7 @@ In this study, U-Net-35 is used, consisting of 15 convolutional, 14 rectified li
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/u-net-architecture.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/u-net-architecture.png?raw=true">
   <br>
   <em>Figure 12 - U-Net Architecture from U-Net: Convolutional Networks for Biomedical Image Segmentation Article</em>
 </p>
@@ -201,19 +201,19 @@ FPN, or Feature Pyramid Network, is a type of neural network architecture for ob
 The FPN architecture aims to combine the advantages of both high-level semantic information and low-level spatial information to improve object detection performance.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/feature_pyramid_network.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/feature_pyramid_network.png?raw=true">
   <br>
   <em>Figure 13 - Feature Pyramid Network Architecture</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/feature_pyramid_network2.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/feature_pyramid_network2.png?raw=true">
   <br>
   <em>Figure 14 - Explanation of Bottom-Up- Top Down and Lateral Layers</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/feature_pyramid_network3.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/feature_pyramid_network3.png?raw=true">
   <br>
   <em>Figure 15 - Merging the  FPN last layers with UNet architecture</em>
 </p>
@@ -222,7 +222,7 @@ The architecture of the Feature Pyramid Network (FPN) architecture using the PyT
 
 In this study FPN is used, consisting of 18 convolutional, 10 rectified linear units (ReLU), five max-pooling, five bottom-up layers, one top-down layer, three up sampling addition layers, three smooth layers, and one up sampling layer.
 
-[Özellik Piramit Ağları - Türkçe Açıklama](https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/%C3%B6zellik_piramit_a%C4%9Flar%C4%B1.ipynb)
+[Özellik Piramit Ağları - Türkçe Açıklama](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/%C3%B6zellik_piramit_a%C4%9Flar%C4%B1.ipynb)
 
 
 
@@ -233,7 +233,7 @@ A U-Net with a ResNeXt50 backbone is an implementation of the U-Net architecture
 In this study, the ResNext50-32x4d model is used for the pre-trained model, and five down-sampling layers, four up-sampling layers, two convolutional layers, and one rectified linear unit (ReLU) are added to this model.
 
 
-[ResNeXt-50 Backbone Türkçe Açıklama](https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/resnext50_t%C3%BCrk%C3%A7e.ipynb)
+[ResNeXt-50 Backbone Türkçe Açıklama](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/resnext50_t%C3%BCrk%C3%A7e.ipynb)
 
 ### F.6 Segmentation Quality Metric
 
@@ -254,21 +254,21 @@ Dice Coefficient Loss is used as the segmentation loss. This is a measure of how
 It is concluded that the mean DICE values on the validation data of both U-Net and FPN model architectures exceeded 80%. It is concluded that the architecture of the ResNext-50 model exceeded 90%.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/vanilla%20unet%20model%20history.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/vanilla%20unet%20model%20history.png?raw=true">
   <br>
   <em>Figure 16 - Epoch vs. DICE with U-Net Architecture</em>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/fpn%20moodel%20history.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/fpn%20moodel%20history.png?raw=true">
   <br>
   <em>Figure 17 - Epoch vs. DICE with FPN Architecture</em>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/resnext50%20model%20history.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/resnext50%20model%20history.png?raw=true">
   <br>
   <em>Figure 18 - Epoch vs. DICE with U-Net- ResNeXt50 Architecture</em>
 </p>
@@ -284,7 +284,7 @@ It was concluded that the mean DICE value of the U-Net model architecture on the
 In the data augmentation part, it is mentioned that different threshold values play an important role in segmenting the tumor. Models built on this are tried to predict the segmentation of the tumor on a random test sample, both without applying a threshold and within a threshold range. As a result, the same results are obtained in both.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/prediction%20mask%20image%20without%20threshold%20and%20with%20threshold.png?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/prediction%20mask%20image%20without%20threshold%20and%20with%20threshold.png?raw=true">
   <br>
   <em>Figure 19 - Prediction Mask Image without Threshold and with Threshold</em>
 </p>
@@ -294,7 +294,7 @@ In the data augmentation part, it is mentioned that different threshold values p
 The results of Prediction and Ground Truth Masks on Brain MR Images are shown on different models. As can be seen from the pictures, the ResNeXt-50 model has been more successful.
 
 <p align="center">
-  <img src="https://github.com/janshimy/Low-Grade-Glioma-Segmentation/blob/main/Pictures/prediction%20of%20resnext50.gif?raw=true">
+  <img src="https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/Pictures/prediction%20of%20resnext50.gif?raw=true">
   <br>
   <em>Figure 20 - Prediction and Ground Truth Masks on the Brain MR Images with ResNeXt50 Backbone</em>
 </p>
