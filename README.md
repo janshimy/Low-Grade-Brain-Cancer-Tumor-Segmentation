@@ -33,9 +33,9 @@
 
 ## A. Business Understanding
 
-This is a capstone project on a real dataset related to segmenting low-grade glioma. This capstone project is included in the *UpSchool Machine Learning & Deep Learning Program in partnership with Google Developers*.
+This is a passion project on a real dataset related to segmenting low-grade glioma. 
 
-[Jupyter Notebook](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/low-grade-glioma-segmentation.ipynb)
+[Jupyter Notebook](https://github.com/janshimy/Low-Grade-Glioma-Brain-Tumor-Segmentation/blob/main/low-grade-glioma-brain-tumor-segmentation.ipynb)
 
 ### A.1 What is the low-grade glioma?
 
